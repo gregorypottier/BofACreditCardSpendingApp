@@ -18,14 +18,21 @@
 - Why did I create this project?
   * I created this project primarily for myself. I wanted the ability to view my credit card e-statements immediately in a digestible format, without giving my personal financial information to a different third party entity.  
 - Who is this project for?
-  * This project was made for those of low or greater technical background who use Bank of America credit cards and would like to view their spending habits without providing
+  * This project was made for those of low or greater technical background who use Bank of America credit cards and would like to view their spending habits without providing information to a third party organization.
 
 ---
 
 **Project Setup**
 
-* Prerequisites (Python version, libraries).
-* Command to run the app locally.
+- Prerequisites
+* Python3.12
+* non standard libraries in requirements.txt
+- Steps
+  * git clone <repo_url>
+  * cd <repo_folder>
+  * pip install -r requirements.txt
+  * streamlit run ./app/app_main.py
+  * app opens locally on default browser
 
 ---
 
