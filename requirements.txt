@@ -1,0 +1,6 @@
+openpyxl
+pandas
+PyPDF2
+PyYAML
+streamlit
+streamlit-option-menu

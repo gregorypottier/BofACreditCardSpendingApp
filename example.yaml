@@ -1,0 +1,108 @@
+# description:str (required) - The value of the transaction string as represented in the streamlit application
+# vendor:str (required) - The name of the vendor the transaction is from
+# expense_category:str (required) - The expense category this transaction belongs to
+# exact_match: bool (required) - Whether or not the description field is an exact match (True) or is not an exact match (False) of the transaction description in the e-statement
+# case_sensitive: bool (optional) - Whether or not the description string should should be case sensitive when searching for a match
+# is_regex: bool (optional) - Whether or not the description string should be treated as regular expression pattern (True) or a literal character string (False)
+# If a YAML file was uploaded, when the UI adds a rule, a new YAML containing the current rules and added rules becomes available for download via a widget. Each new rule is for that specific transaction only
+# If a YAML file was not originally uploaded, the UI adds a rule, a new YAML containing added rules becomes available for download via a widget. Each new rule is for that specific transaction only
+
+vec_items:
+  - description: "5GUYS 0216 QSR ATHENS GA"
+    vendor: "Five Guys"
+    expense_category: "Dining/Drinking out"
+    exact_match: True
+  - description: "B&NBKSTRGEORGIATECH2250 ATLANTA GA"
+    vendor: "Ga Tech Bookstore"
+    expense_category: "Shopping"
+    exact_match: True
+  - description: "WM SUPERCENTER"
+    vendor: "Walmart"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "WAL-MART"
+    vendor: "Walmart"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "TACO BELL"
+    vendor: "Taco Bell"
+    expense_category: "Dining out"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "Subway"
+    vendor: "Subway"
+    expense_category: "Dining out"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "RACETRAC"
+    vendor: "Racetrac"
+    expense_category: "Car/Transportation"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "PUBLIX"
+    vendor: "Publix"
+    expense_category: "Groceries/Household supplies"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "Pet Supplies Plus"
+    vendor: "Pet Supplies Plus"
+    expense_category: "Dogs"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "KROGER"
+    vendor: "Kroger"
+    expense_category: "Groceries/Household supplies"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "AMZN Mktp"
+    vendor: "Amazon"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "Amazon.com"
+    vendor: "Amazon"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "AMAZON.COM"
+    vendor: "Amazon"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "AMAZON RET*"
+    vendor: "Amazon"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "AMAZON MKTPL*"
+    vendor: "Amazon"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "AMAZON MARK*"
+    vendor: "Amazon"
+    expense_category: "Shopping"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False
+  - description: "Amazon Prime"
+    vendor: "Amazon"
+    expense_category: "Subscriptions"
+    exact_match: False
+    case_sensitive: True
+    is_regex: False

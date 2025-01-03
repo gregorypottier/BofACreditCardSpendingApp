@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#8B0000"  # Darker red
+backgroundColor = "White"  
+secondaryBackgroundColor = "White" 
+textColor = "Black"  # Black text
+font = "sans serif"  # Font type
