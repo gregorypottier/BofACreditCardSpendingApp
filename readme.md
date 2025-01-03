@@ -25,8 +25,8 @@
 **Project Setup**
 
 - Prerequisites
-* Python3.12
-* non standard libraries in requirements.txt
+  * Python3.12
+  * non standard libraries in requirements.txt
 - Steps
   * git clone <repo_url>
   * cd <repo_folder>
