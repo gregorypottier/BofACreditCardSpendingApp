@@ -133,27 +133,3 @@ def get_statement_df(pdf_text:str)->pd.DataFrame:
     statement_df = statement_df.drop(labels=["Year"], axis=1)
     statement_df = clean_statement(statement_df)
     return statement_df
-
-def etl_statements_main(file_directory:str, output_path:str):
-    if os.path.exists(output_path):
-        os.remove(output_path)
-
-    file_path_list = os.listdir(file_directory)
-    df_list = []
-    for file_path in file_path_list:
-        if file_path[0]!=".":
-            print("="*25)
-            print(f"Starting to process {file_path}")
-            pdf_text = extract_pdf_text(file_directory+file_path)
-            statement_df = get_statement_df(pdf_text)
-            print(f"Finished processing {file_path}. Produced {len(statement_df)} records.")
-            print("="*25)
-            df_list.append(statement_df)
-
-    df = pd.concat(objs=df_list, ignore_index=True)
-    if output_path.split(".")[-1]=="xlsx":
-        df.to_excel(output_path, index=False, engine="openpyxl")
-    elif output_path.split(".")[-1]=="csv":
-        df.to_csv(output_path, index=False)
-    else:
-        raise ValueError("Ensure that your file path ends with either '.csv' or '.xlsx'.")
